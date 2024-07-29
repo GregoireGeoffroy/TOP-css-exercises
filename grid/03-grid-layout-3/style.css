@@ -25,17 +25,31 @@
   grid-template-columns: 1fr 2fr;
 }
 
-.menu ul,
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+
+
+.menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .menu li {
   font-size: 16px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(fr);
-  gap: 32px;
+  list-style-type: none;
+
 }
 
 .sidebar {
   background-color: #C50208;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
 }
 
 .sidebar .photo {
